@@ -33,7 +33,7 @@ h1{
 }
 .nav-bar .nav-bar-conteudo ul li{
     list-style-type: none;
-    font-size: 18px;
+    font-size: 25px;
 }
 .nav-bar .nav-bar-conteudo a{
     text-decoration: none;
@@ -52,10 +52,19 @@ h1{
     flex-direction: row;
     justify-content: center;
 }
-#imagens img{
+#imagens img:first-child{
     height: 350px;
     width: 45%;
     padding: 5px;
+    border-radius: 15px;
+    box-shadow: brown -5px 5px, rgba(165, 42, 42, 0.3) -10px 10px, rgba(165, 42, 42, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+#imagens img:last-child{
+    height: 350px;
+    width: 45%;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: brown 5px 5px, rgba(165, 42, 42, 0.3) 10px 10px, rgba(165, 42, 42, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
 }
 .texto-centralizado{
     text-align: center;
@@ -90,7 +99,7 @@ h1{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 25px;
+    margin: 25px 0px;
 }
 #opniao .container{
     display: flex;
@@ -102,6 +111,7 @@ h1{
     border-radius: 15px;
     width: 50vw;
     height: 350px;
+    padding: 20px 0px;
 }
 #opniao .container .linha{
     display: flex;
@@ -117,8 +127,12 @@ h1{
 #opniao .container .linha .linha-container:first-child{
     margin-right: 15px;
 }
-#opniao .container .linha .linha-container label{
+#opniao .container .linha-container label{
     font-size: 25px;
+}
+#opniao .container .linha .linha-container input{
+    font-size: 25px;
+    padding: 5px;
 }
 #opniao .container .linha .linha-container label::first-letter{
     color: rgb(178, 110, 110);
