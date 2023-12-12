@@ -46,25 +46,6 @@ h1{
 .nav-bar .nav-bar-conteudo ul li:not(:last-child){
     margin-right: 25px;
 }
-#imagens{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-#imagens img:first-child{
-    height: 350px;
-    width: 45%;
-    padding: 5px;
-    border-radius: 15px;
-    box-shadow: brown -5px 5px, rgba(165, 42, 42, 0.3) -10px 10px, rgba(165, 42, 42, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
-}
-#imagens img:last-child{
-    height: 350px;
-    width: 45%;
-    padding: 5px;
-    border-radius: 15px;
-    box-shadow: brown 5px 5px, rgba(165, 42, 42, 0.3) 10px 10px, rgba(165, 42, 42, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
-}
 .texto-centralizado{
     text-align: center;
 }
@@ -225,6 +206,40 @@ footer .icones-redes img{
     height: 40px;
 }
 
+/* CARROSSEL */
+.carrossel{
+    width: 500px;
+    height: 350px;
+    outline: 3px solid black;
+    overflow: hidden;
+    margin: 50px auto;
+    box-shadow: brown -5px 5px, rgba(165, 42, 42, 0.3) -10px 10px, rgba(165, 42, 42, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+.carrossel ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 1500px;
+    height: 350px;
+}
+.carrossel li{
+    position: relative;
+    animation: slide 10s infinite ease-out;
+}
+.carrossel ul li img{
+    width: 500px;
+    height: 350px;
+}
+@keyframes slide {
+    0%{left:0px}
+    20%{left:0px}
+    30%{left:-500px}
+    50%{left: -500px}
+    60%{left: -1000px}
+    90%{left: -1000px}
+    100%{left: 0px}
+}
 @media screen and (max-width: 800px){
     #opniao .container .linha{
         flex-direction: column;
