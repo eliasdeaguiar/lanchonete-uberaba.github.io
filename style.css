@@ -205,9 +205,29 @@ footer .icones-redes img{
     width: 40px;
     height: 40px;
 }
-
+.section-carrossel{
+    position: relative;
+}
+.container-carrossel{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('./como-decorar-uma-lanchonete-com-pouco-dinheiro.jpg'); /* Substitua pelo caminho real da sua imagem */
+    background-size: cover; /* Isso fará com que a imagem cubra toda a div */
+    background-position: center; /* Isso centralizará a imagem na div */
+    background-repeat: no-repeat;
+    filter: sepia(100%); /* Aplica o filtro sepia (100%) à imagem de fundo */
+    border-radius: 50px;
+}
 /* CARROSSEL */
 .carrossel{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
     width: 500px;
     height: 350px;
     outline: 3px solid black;
@@ -230,6 +250,7 @@ footer .icones-redes img{
 .carrossel ul li img{
     width: 500px;
     height: 350px;
+    filter: sepia(0%);
 }
 @keyframes slide {
     0%{left:0px}
